@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..//espace commantaire/cass/style.css">
+    <title>espace commantaire</title>
+    <script src="..//espace commantaire/script/sript.js"></script>
+</head>
+
+<body>
+    <div class="comments">
+        <!-- Liste des commentaires existants -->
+        <div class="comment">
+            <h4>Mark Edward</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+                Accusamus est perspiciatis veritatis quod facere adipisci optio quidem laborum eligendi<br>
+                voluptatum dignissimos possimus architecto quibusdam itaque quam cupiditate omnis, illo doloremque.</p>
+        </div>
+    </div>
+
+    <form id="commentForm">
+        <h3> Écrire en commentaire</h3>
+        <label for="firstName">Prénom</label>
+        <input type="text" id="firstName" name="firstName" required>
+    
+        <label for="lastName">Nom</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="commentText"> commentaire :</label>
+
+        <textarea id="commentText" rows="10" name="commentText" required></textarea>
+    
+        <button type="button" onclick="addComment()">Envoyer</button>
+        <p id="errorMessage" style="color: red; display: none;">Veuillez remplir tous les champs.</p>
+    </form>
+
+</body>
